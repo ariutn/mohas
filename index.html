@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاينة أكواد HTML, CSS, JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>معاينة أكواد HTML, CSS, JS</h1>
+
+        <div class="code-inputs">
+            <div class="input-panel">
+                <label for="htmlCode">HTML:</label>
+                <textarea id="htmlCode" spellcheck="false" placeholder="اكتب كود HTML هنا..."></textarea>
+            </div>
+            <div class="input-panel">
+                <label for="cssCode">CSS:</label>
+                <textarea id="cssCode" spellcheck="false" placeholder="اكتب كود CSS هنا..."></textarea>
+            </div>
+            <div class="input-panel">
+                <label for="jsCode">JavaScript:</label>
+                <textarea id="jsCode" spellcheck="false" placeholder="اكتب كود JavaScript هنا..."></textarea>
+            </div>
+        </div>
+
+        <button id="runCode">تحديث المعاينة</button>
+
+        <h2>المعاينة:</h2>
+        <div class="preview-area">
+            <iframe id="livePreview" sandbox="allow-scripts allow-forms allow-same-origin" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
